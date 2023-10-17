@@ -1,0 +1,54 @@
+$MAIN_BLACK: #000200;
+$MAIN_GREY: #252525;
+$ACCENT_YELLOW: #ffc25b;
+
+$BORDER_GREY: 1px solid #252525;
+$BORDER_BLACK: 1px solid #000200;
+$BORDER_YELLOW: 1px solid #ffc25b;
+
+$PADDING-SEC: 100px 0;
+$PADDING-SEC-EXTRA: 150px;
+$MARGIN-TITLE: 80px;
+$MARGIN-TITLE-MINI: 18px;
+
+.container {
+  max-width: 1145px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.title_h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+.title_h2__double {
+  h2 {
+    color: $ACCENT_YELLOW;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  p {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+.title_h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.title_h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text {
+}

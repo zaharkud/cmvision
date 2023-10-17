@@ -1,0 +1,18 @@
+@import "assets/styles/vars.module.scss";
+
+.section {
+}
+
+.content {
+  padding: 120px 0 360px 0;
+}
+
+.title_h2 {
+  margin-bottom: 80px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}

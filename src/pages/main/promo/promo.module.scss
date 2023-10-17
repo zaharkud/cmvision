@@ -1,0 +1,41 @@
+@import "assets/styles/vars.module.scss";
+
+.section {
+  background: url("../../../assets/img/promo/promo.jpg") 100% 0 / 90% no-repeat fixed;
+  height: 680px;
+  max-height: 100vh;
+}
+
+.content {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 40px;
+  max-width: 430px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    height: 1px;
+    width: 240px;
+    background-color: white;
+  }
+  span {
+    font-weight: 500;
+  }
+}
+
+.subtitle {
+  margin-top: 91px;
+
+  font-size: 28px;
+  max-width: 200px;
+}

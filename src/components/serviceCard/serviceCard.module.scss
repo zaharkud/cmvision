@@ -1,0 +1,21 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 37px 25px 27px 25px;
+  height: 320px;
+  background-color: $MAIN_GREY;
+  border: $BORDER_GREY;
+  transition: border 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    border: $BORDER_YELLOW;
+  }
+}
+
+.title_h4 {
+  margin-bottom: 25px;
+}
