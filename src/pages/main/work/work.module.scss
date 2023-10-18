@@ -1,0 +1,40 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 120px 0 360px 0;
+}
+
+.title_h2 {
+  margin-bottom: 80px;
+}
+
+.workScheme {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+.workItem {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.title_h4 {
+  margin-bottom: 10px;
+}
+
+.graphics {
+  background-color: $ACCENT_YELLOW;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: relative;
+
+  & span {
+    color: $MAIN_BLACK;
+    font-size: 90px;
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+  }
+}

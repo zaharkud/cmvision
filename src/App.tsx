@@ -5,6 +5,7 @@ import Header from "sections/header/header";
 import Promo from "pages/main/promo/promo";
 import Services from "pages/main/services/services";
 import Advantages from "pages/main/advantages/advantages";
+import Work from "pages/main/work/work";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Promo></Promo>
         <Services></Services>
         <Advantages></Advantages>
+        <Work></Work>
       </div>
     </div>
   );
