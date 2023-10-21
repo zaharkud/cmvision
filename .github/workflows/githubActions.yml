@@ -1,5 +1,5 @@
-name: CMVision
-run-name: CMVision CI-Actions
+name: KMVision
+run-name: KMVision CI-Actions
 on:
   push:
     branches: [main]
