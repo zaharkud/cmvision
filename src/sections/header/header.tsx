@@ -8,10 +8,10 @@ const Header: React.FC = () => {
     <header className={style.section}>
       <div className={style.container}>
         <div className={style.content}>
-          <a className={style.logo} href="#">
+          <Link className={style.logo} to="/">
             <img src={logo} alt="Системы Безопасности" />
             <p>Системы безопасности</p>
-          </a>
+          </Link>
           <nav>
             <ul className={style.menu}>
               <li>
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className={style.link}>
+                <Link to="/projects" className={style.link}>
                   Проекты
                 </Link>
               </li>

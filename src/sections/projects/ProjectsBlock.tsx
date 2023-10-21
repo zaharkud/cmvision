@@ -1,5 +1,5 @@
 import ProjectCard from "./projectCard/ProjectCard";
-import style from "./projects.module.scss";
+import style from "./projectsBlock.module.scss";
 
 const Projects: React.FC = () => {
   return (

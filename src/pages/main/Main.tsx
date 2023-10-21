@@ -3,7 +3,7 @@ import Promo from "pages/main/promo/promo";
 import Services from "pages/main/services/services";
 import Advantages from "pages/main/advantages/advantages";
 import Work from "pages/main/work/work";
-import Projects from "sections/projects/Projects";
+import ProjectsBlock from "sections/projects/ProjectsBlock";
 import ContactUs from "sections/contactUs/ContactUs";
 import Footer from "sections/footer/Footer";
 
@@ -15,7 +15,7 @@ const Main: React.FC = () => {
       <Services></Services>
       <Advantages></Advantages>
       <Work></Work>
-      <Projects></Projects>
+      <ProjectsBlock />
       <ContactUs></ContactUs>
       <Footer></Footer>
     </>

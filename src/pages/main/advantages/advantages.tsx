@@ -7,6 +7,11 @@ import bgGrey from "assets/img/deco/bgGrey.svg";
 import AdvantageItemRight from "./components/advantageItemRight";
 import AdvantageItemLeft from "./components/advantageItemLeft";
 
+import equipment from "assets/icons/advantages/equipment.svg";
+import profTeam from "assets/icons/advantages/profTeam.svg";
+import warrant from "assets/icons/advantages/warrant.svg";
+import quickWork from "assets/icons/advantages/quickWork.svg";
+
 const Advantages: React.FC = () => {
   return (
     <div className={style.section}>
@@ -22,10 +27,29 @@ const Advantages: React.FC = () => {
             <h2>4 весомые причины</h2>
           </div>
           <div className={style.advantages}>
-            <AdvantageItemRight></AdvantageItemRight>
-            <AdvantageItemRight></AdvantageItemRight>
-            <AdvantageItemLeft></AdvantageItemLeft>
-            <AdvantageItemLeft></AdvantageItemLeft>
+            <AdvantageItemRight
+              title="Гарантия от 3 лет"
+              description="Предоставляем расширенную гарантию
+              на оборудование от 3-х лет"
+              img={warrant}
+            />
+            <AdvantageItemRight
+              title="Современное оборудование"
+              description="Монтируем только проверенное
+              оборудование"
+              img={equipment}
+            />
+            <AdvantageItemLeft
+              title="Команда профессионалов"
+              description="Сертифицированные специалисты с большим опытом работы"
+              img={profTeam}
+            />
+            <AdvantageItemLeft
+              title="Оперативность"
+              description="Смета в течение часа,
+              выезд на установку на следующий день"
+              img={quickWork}
+            />
           </div>
         </div>
       </div>

@@ -24,6 +24,7 @@ $MARGIN-TITLE-MINI: 18px;
   letter-spacing: 4.5px;
   color: transparent;
   -webkit-text-stroke: 1px $ACCENT_YELLOW;
+  text-transform: uppercase;
 }
 .title_h2 {
   color: white;
@@ -58,6 +59,8 @@ $MARGIN-TITLE-MINI: 18px;
 }
 
 .text {
+  line-height: 1.25;
+  letter-spacing: 0.8px;
 }
 
 .deco {

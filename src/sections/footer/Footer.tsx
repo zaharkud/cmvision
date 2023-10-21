@@ -1,4 +1,7 @@
 import style from "./footer.module.scss";
+
+import { Link } from "react-router-dom";
+
 import logo from "assets/img/logo/logo.png";
 
 import lineWrecked from "assets/img/deco/lineWrecked.svg";
@@ -61,16 +64,19 @@ const Footer: React.FC = () => {
               <nav>
                 <ul className={style.menu}>
                   <li>
-                    <a href="#">Главная</a>
+                    <Link to="/">Главная</Link>
                   </li>
                   <li>
-                    <a href="#">О нас</a>
+                    <Link to="/about">О нас</Link>
                   </li>
                   <li>
-                    <a href="#">Проекты</a>
+                    <Link to="/projects">Услуги</Link>
                   </li>
                   <li>
-                    <a href="#">Контакты </a>
+                    <Link to="/projects">Проекты </Link>
+                  </li>
+                  <li>
+                    <Link to="/contacts">Контакты </Link>
                   </li>
                 </ul>
               </nav>

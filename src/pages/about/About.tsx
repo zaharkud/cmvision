@@ -1,5 +1,5 @@
 import Header from "sections/header/header";
-import Projects from "sections/projects/Projects";
+import ProjectsBlock from "sections/projects/ProjectsBlock";
 import ContactUs from "sections/contactUs/ContactUs";
 import Footer from "sections/footer/Footer";
 import AboutPromo from "./aboutPromo/AboutPromo";
@@ -13,7 +13,7 @@ const About: React.FC = () => {
       <AboutPromo></AboutPromo>
       <Documents></Documents>
       <Awards></Awards>
-      <Projects></Projects>
+      <ProjectsBlock />
       <ContactUs></ContactUs>
       <Footer></Footer>
     </>
