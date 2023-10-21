@@ -1,0 +1,45 @@
+@import "assets/styles/vars.module.scss";
+
+.card {
+  position: relative;
+}
+.content {
+  position: relative;
+  z-index: 100;
+  padding: 0 50px 30px 0;
+}
+.contentBottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.contentTop {
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  & img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  &:hover {
+    border: $BORDER_YELLOW;
+  }
+}
+.bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $MAIN_BLACK;
+  width: 90%;
+  height: 90%;
+}
+
+.title_h3 {
+  color: $ACCENT_YELLOW;
+  margin-bottom: 28px;
+}
+
+.text {
+  max-width: 70%;
+}

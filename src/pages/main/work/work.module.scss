@@ -1,7 +1,8 @@
 @import "assets/styles/vars.module.scss";
 
 .content {
-  padding: 120px 0 360px 0;
+  padding: 120px 0 160px 0;
+  position: relative;
 }
 
 .title_h2 {
@@ -11,7 +12,7 @@
 .workScheme {
   display: flex;
   flex-direction: column;
-
+  max-width: 40%;
   gap: 40px;
 }
 .workItem {
@@ -25,8 +26,8 @@
 
 .graphics {
   background-color: $ACCENT_YELLOW;
-  width: 75px;
-  height: 75px;
+  min-width: 75px;
+  min-height: 75px;
   border-radius: 50%;
   position: relative;
 
@@ -37,4 +38,21 @@
     bottom: -30px;
     left: 15px;
   }
+}
+
+.decoIn {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 410px;
+  height: 410px;
+  border: $BORDER_YELLOW;
+}
+.decoOut {
+  position: absolute;
+  top: 150px;
+  right: -300px;
+  width: 600px;
+  height: 410px;
+  border: $BORDER_YELLOW;
 }

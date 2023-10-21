@@ -3,6 +3,7 @@ import style from "./advantages.module.scss";
 import lineWrecked from "assets/img/deco/lineWrecked.svg";
 import lineStraight from "assets/img/deco/lineStraight.svg";
 import bgGrey from "assets/img/deco/bgGrey.svg";
+
 import AdvantageItemRight from "./components/advantageItemRight";
 import AdvantageItemLeft from "./components/advantageItemLeft";
 

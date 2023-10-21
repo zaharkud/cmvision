@@ -1,0 +1,43 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 120px 0 360px 0;
+}
+
+.contactsCard {
+  padding: 97px 70px;
+  background-color: $ACCENT_YELLOW;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.descr {
+  flex: 0 0 50%;
+  font-size: 64px;
+  color: $MAIN_BLACK;
+}
+
+.contactsBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.btn {
+  background-color: $MAIN_BLACK;
+  height: 85px;
+  min-width: 285px;
+  font-size: 20px;
+  padding: 25px 35px;
+  display: flex;
+  gap: 57px;
+  align-items: center;
+  transition: background-color 0.3s;
+
+  & img {
+    width: 35px;
+    height: 35px;
+  }
+  &:hover {
+    background-color: $MAIN_GREY;
+  }
+}

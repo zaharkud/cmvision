@@ -1,0 +1,36 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 100px 0 120px 0;
+}
+.pageTitle {
+  margin-bottom: 80px;
+}
+
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutInfo {
+  flex: 0 0 45%;
+
+  & p:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+}
+
+.aboutStat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.statItem {
+  max-width: 160px;
+  .num {
+    font-size: 64px;
+    color: $ACCENT_YELLOW;
+  }
+  .descr {
+    margin-top: 10px;
+  }
+}

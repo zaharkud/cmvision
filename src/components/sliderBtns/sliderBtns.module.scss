@@ -1,0 +1,17 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+
+.btn {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: $BORDER_YELLOW;
+  &__active {
+    background-color: $ACCENT_YELLOW;
+  }
+}

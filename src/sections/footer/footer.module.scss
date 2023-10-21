@@ -1,0 +1,63 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 150px 0 60px 0;
+}
+
+.logo {
+  font-size: 16px;
+  max-width: 200px;
+  & img {
+    min-height: 50px;
+  }
+}
+
+.footerTop {
+  margin-bottom: 45px;
+}
+.footerCenter {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerBottom {
+  border-top: $BORDER_YELLOW;
+  padding-top: 30px;
+}
+.column_1 {
+  flex: 0 0 33%;
+}
+.column_2 {
+}
+.column_3 {
+}
+
+.text {
+  margin-bottom: 70px;
+}
+.social {
+  display: flex;
+  gap: 40px;
+}
+
+.title_h4 {
+  margin-bottom: 25px;
+}
+.cities {
+  display: flex;
+  gap: 40px;
+}
+.citiesUl {
+  li:not(:last-of-type) {
+    margin-bottom: 18px;
+  }
+}
+
+.menu {
+  li:not(:last-of-type) {
+    margin-bottom: 18px;
+  }
+  a:hover {
+    color: $ACCENT_YELLOW;
+  }
+}

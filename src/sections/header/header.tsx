@@ -3,9 +3,9 @@ import logo from "assets/img/logo/logo.png";
 
 const Header: React.FC = () => {
   return (
-    <div className={style.section}>
+    <header className={style.section}>
       <div className={style.container}>
-        <header className={style.content}>
+        <div className={style.content}>
           <a className={style.logo} href="#">
             <img src={logo} alt="Системы Безопасности" />
             <p>Системы безопасности</p>
@@ -26,9 +26,9 @@ const Header: React.FC = () => {
               </li>
             </ul>
           </nav>
-        </header>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -1,0 +1,44 @@
+@import "assets/styles/vars.module.scss";
+
+.section {
+  background-color: $MAIN_GREY;
+}
+
+.content {
+  padding: 120px 0;
+}
+
+.title_h2__double {
+  margin-bottom: 80px;
+}
+
+.documentsList {
+  display: flex;
+  gap: 60px;
+}
+.documentsItem {
+  position: relative;
+  height: 290px;
+  width: 210px;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 150;
+  }
+  & .bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $MAIN_BLACK;
+    border: $BORDER_BLACK;
+    height: 90%;
+    width: 90%;
+    transition: border 0.3s;
+  }
+  &:hover .bg {
+    border: $BORDER_YELLOW;
+  }
+}
