@@ -23,6 +23,7 @@
 .footerBottom {
   border-top: $BORDER_YELLOW;
   padding-top: 30px;
+  font-size: 13px;
 }
 .column_1 {
   flex: 0 0 33%;
@@ -45,7 +46,7 @@
 }
 .cities {
   display: flex;
-  gap: 40px;
+  gap: 50px;
 }
 .citiesUl {
   li:not(:last-of-type) {

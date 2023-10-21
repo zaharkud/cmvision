@@ -1,6 +1,8 @@
 import style from "./header.module.scss";
 import logo from "assets/img/logo/logo.png";
 
+import { Link } from "react-router-dom";
+
 const Header: React.FC = () => {
   return (
     <header className={style.section}>
@@ -13,16 +15,29 @@ const Header: React.FC = () => {
           <nav>
             <ul className={style.menu}>
               <li>
-                <a href="#">Главная</a>
+                <Link to="/" className={style.link}>
+                  Главная
+                </Link>
               </li>
               <li>
-                <a href="#">О нас</a>
+                <Link to="/about" className={style.link}>
+                  О нас
+                </Link>
               </li>
               <li>
-                <a href="#">Проекты</a>
+                <Link to="/contacts" className={style.link}>
+                  Услуги
+                </Link>
               </li>
               <li>
-                <a href="#">Контакты </a>
+                <Link to="/" className={style.link}>
+                  Проекты
+                </Link>
+              </li>
+              <li>
+                <Link to="/contacts" className={style.link}>
+                  Контакты
+                </Link>
               </li>
             </ul>
           </nav>

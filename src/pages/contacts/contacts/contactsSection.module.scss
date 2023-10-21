@@ -1,7 +1,7 @@
 @import "assets/styles/vars.module.scss";
 
 .content {
-  padding: 100px 0 120px 0;
+  padding: 100px 0 360px 0;
 }
 .pageTitle {
   margin-bottom: 80px;
@@ -56,7 +56,7 @@
   & > :first-child {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    background-image: url("../../assets/icons/socialThin/telegram.svg");
+    background-image: url("../../../assets/icons/socialThin/telegram.svg");
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: bottom -40px left -80px;
@@ -67,7 +67,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("../../assets/icons/socialThin/whatsapp.svg");
+    background-image: url("../../../assets/icons/socialThin/whatsapp.svg");
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: top -90px right -60px;

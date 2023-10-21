@@ -11,10 +11,10 @@
   display: flex;
   gap: 60px;
 
-  a {
+  .link {
     transition: color 0.3s;
   }
-  a:hover {
+  .link:hover {
     color: $ACCENT_YELLOW;
   }
 }
