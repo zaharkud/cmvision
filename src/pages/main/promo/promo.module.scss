@@ -50,11 +50,12 @@
 
 .title {
   font-size: 120px;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 8px;
-  color: transparent;
+  letter-spacing: 12px;
+  font-family: "Roboto", sans-serif;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px $ACCENT_YELLOW;
   //max-width: 430px;
   // position: relative;
@@ -86,6 +87,7 @@
   font-size: 22px;
   //max-width: 200px;
   line-height: 1.2;
+  letter-spacing: 1px;
   color: white;
 
   @media (max-width: 550px) {
