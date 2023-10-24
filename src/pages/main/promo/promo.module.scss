@@ -1,14 +1,22 @@
 @import "assets/styles/vars.module.scss";
 
 .section {
-  background-image: url("../../../assets/img/promo/promo.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 60% 60%;
-  background-position: center right;
-  height: 680px;
   max-height: 90vh;
+  padding: 150px 0;
   position: relative;
+  &::before {
+    content: "";
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../../assets/img/promo/promo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -74,10 +82,11 @@
 }
 
 .subtitle {
-  margin-top: 91px;
-  font-size: 28px;
-  max-width: 200px;
+  margin-top: 40px;
+  font-size: 22px;
+  //max-width: 200px;
   line-height: 1.2;
+  color: white;
 
   @media (max-width: 550px) {
     font-size: 22px;

@@ -6,7 +6,7 @@ const Promo: React.FC = () => {
       <div className={style.container}>
         <div className={style.content}>
           <h1 className={style.title}>Видео- наблюдение</h1>
-          <p className={style.subtitle}>Кавказкие Минеральные Воды</p>
+          <p className={style.subtitle}>Продажа и установка на КМВ</p>
         </div>
       </div>
     </div>
