@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                     <Link to="/about">О нас</Link>
                   </li>
                   <li>
-                    <Link to="/projects">Услуги</Link>
+                    <Link to="/services">Услуги</Link>
                   </li>
                   <li>
                     <Link to="/projects">Проекты </Link>

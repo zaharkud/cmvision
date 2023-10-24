@@ -2,7 +2,7 @@
 
 .content {
   padding: 37px 25px 27px 25px;
-  height: 320px;
+
   background-color: $MAIN_GREY;
   border: $BORDER_GREY;
   transition: border 0.3s;
@@ -16,6 +16,12 @@
   }
 }
 
-.title_h4 {
-  margin-bottom: 25px;
+.top {
+  img {
+    margin-bottom: 60px;
+  }
+}
+
+.text {
+  margin-top: 25px;
 }

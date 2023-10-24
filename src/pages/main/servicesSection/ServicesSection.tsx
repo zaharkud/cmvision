@@ -1,7 +1,7 @@
 import ServiceCard from "components/serviceCard/serviceCard";
-import style from "./services.module.scss";
+import style from "./servicesSection.module.scss";
 
-const Services: React.FC = () => {
+const ServicesSection: React.FC = () => {
   return (
     <div className={style.section}>
       <div className={style.container}>
@@ -19,4 +19,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;

@@ -1,0 +1,76 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 100px 0 160px 0;
+}
+
+.title_h2 {
+  margin-bottom: 100px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.cardItem {
+  border: $BORDER_YELLOW;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+
+  & img {
+    max-width: 100px;
+    object-fit: contain;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    left: -70px;
+    background-color: $ACCENT_YELLOW;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &:hover::after {
+    content: "";
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.equipmentInfo {
+  display: flex;
+  justify-content: space-between;
+
+  .descr {
+    flex: 0 1 50%;
+  }
+  .producers {
+    flex: 0 0 40%;
+  }
+  .producersLogos {
+    display: flex;
+    gap: 20px;
+    & img {
+      max-height: 125px;
+      object-fit: contain;
+    }
+  }
+  .title_h3 {
+    margin-bottom: 30px;
+  }
+  & p:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

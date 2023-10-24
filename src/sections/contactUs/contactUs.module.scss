@@ -22,22 +22,3 @@
   flex-direction: column;
   gap: 13px;
 }
-.btn {
-  background-color: $MAIN_BLACK;
-  height: 85px;
-  min-width: 285px;
-  font-size: 20px;
-  padding: 25px 35px;
-  display: flex;
-  gap: 57px;
-  align-items: center;
-  transition: background-color 0.3s;
-
-  & img {
-    width: 35px;
-    height: 35px;
-  }
-  &:hover {
-    background-color: $MAIN_GREY;
-  }
-}

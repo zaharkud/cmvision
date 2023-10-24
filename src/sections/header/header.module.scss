@@ -17,4 +17,7 @@
   .link:hover {
     color: $ACCENT_YELLOW;
   }
+  @media (max-width: 900px) {
+    display: none;
+  }
 }

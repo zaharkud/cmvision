@@ -1,0 +1,50 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 100px 0 120px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 80px;
+
+  & > article {
+    flex: 0 1 25%;
+    cursor: pointer;
+  }
+}
+
+.serviceInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  flex: 0 0 45%;
+  & p:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+}
+.serviceImg {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  & img {
+    height: 200px;
+    object-fit: contain;
+  }
+  &::after {
+    content: "";
+    width: 300px;
+    height: 160px;
+    border: $BORDER_YELLOW;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: 100px;
+  }
+}

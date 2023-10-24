@@ -1,0 +1,94 @@
+@import "assets/styles/vars.module.scss";
+
+.section {
+  background-color: $MAIN_GREY;
+}
+.content {
+  padding: 120px 0 300px 0;
+}
+
+.title_h2__double {
+  margin-bottom: 80px;
+}
+
+.solutionsSwitcher {
+  display: flex;
+  justify-content: space-between;
+}
+.solutionsMenu {
+  flex: 0 0 30%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.btn {
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  &:hover {
+    background-color: $ACCENT_YELLOW;
+    border: $BORDER_YELLOW;
+    color: $MAIN_BLACK;
+  }
+}
+
+.solutionsCard {
+  flex: 0 0 60%;
+  position: relative;
+
+  .cardContent {
+    position: relative;
+    z-index: 100;
+    padding: 0 50px 50px 0;
+  }
+  .cardImg {
+    & img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
+  .cardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .cardLeft {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cardRight {
+    flex: 0 0 45%;
+    border: $BORDER_YELLOW;
+    padding: 40px;
+  }
+  .purchaseLine {
+    font-size: 16px;
+    line-height: 1.5;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  .finalCost {
+    color: $ACCENT_YELLOW;
+    font-size: 23px;
+    margin-top: 40px;
+    font-weight: 500;
+  }
+  .bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $MAIN_BLACK;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+  }
+
+  .title_h3 {
+    color: $ACCENT_YELLOW;
+    margin-bottom: 28px;
+  }
+}
