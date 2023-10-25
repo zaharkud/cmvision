@@ -51,10 +51,14 @@ const Footer: React.FC = () => {
                   <li>Пятигорск</li>
                   <li>Кисловодск</li>
                   <li>Ессентуки</li>
+                  <li>Георгиевск</li>
+                  <li>Железноводск</li>
                 </ul>
                 <ul className={style.citiesUl}>
                   <li>Минеральные Воды</li>
                   <li>Зеленокумск</li>
+                  <li>Суворовская</li>
+                  <li>Новопавловск</li>
                   <li>И другие...</li>
                 </ul>
               </div>

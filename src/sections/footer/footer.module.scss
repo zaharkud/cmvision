@@ -2,6 +2,8 @@
 
 .content {
   padding: 150px 0 60px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -14,11 +16,21 @@
 
 .footerTop {
   margin-bottom: 45px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 75px;
+  }
 }
 .footerCenter {
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap-reverse;
+    row-gap: 90px;
+  }
 }
 .footerBottom {
   border-top: $BORDER_YELLOW;
@@ -27,10 +39,22 @@
 }
 .column_1 {
   flex: 0 0 33%;
+  @media (max-width: 900px) {
+    flex: 0 0 100%;
+  }
 }
 .column_2 {
+  @media (max-width: 900px) {
+    flex: 1 0 45%;
+  }
+  @media (max-width: 650px) {
+    flex: 0 0 100%;
+  }
 }
 .column_3 {
+  @media (max-width: 900px) {
+    flex: 0 0 30%;
+  }
 }
 
 .text {
