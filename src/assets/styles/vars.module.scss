@@ -134,10 +134,9 @@ $MARGIN-TITLE-MINI: 18px;
 
 .btn {
   background-color: $MAIN_BLACK;
-  height: 85px;
   min-width: 285px;
   font-size: 20px;
-  padding: 25px 35px;
+  padding: 30px 35px;
   display: flex;
   gap: 57px;
   align-items: center;
@@ -149,5 +148,35 @@ $MARGIN-TITLE-MINI: 18px;
   }
   &:hover {
     background-color: $MAIN_GREY;
+  }
+
+  @media (max-width: 650px) {
+    min-width: 260px;
+    padding: 25px 30px;
+    font-size: 16px;
+    gap: 40px;
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @media (max-width: 500px) {
+    min-width: 0;
+    padding: 25px 30px;
+    font-size: 16px;
+    gap: 40px;
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @media (max-width: 420px) {
+    font-size: 14px;
+    gap: 30px;
+    padding: 20px 25px;
+    & img {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

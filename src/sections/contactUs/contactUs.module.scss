@@ -2,6 +2,10 @@
 
 .content {
   padding: 120px 0 360px 0;
+
+  @media (max-width: 650px) {
+    padding: 120px 0 260px 0;
+  }
 }
 
 .contactsCard {
@@ -10,15 +14,51 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    margin: 0 40px;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 70px;
+    align-items: start;
+  }
+  @media (max-width: 650px) {
+    padding: 70px 50px;
+    margin: 0 20px;
+  }
+  @media (max-width: 500px) {
+    padding: 50px 40px;
+  }
 }
 .descr {
   flex: 0 0 50%;
   font-size: 64px;
   color: $MAIN_BLACK;
+
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+  @media (max-width: 650px) {
+    font-size: 40px;
+  }
+  @media (max-width: 550px) {
+    font-size: 35px;
+  }
+  @media (max-width: 420px) {
+    font-size: 28px;
+  }
 }
 
 .contactsBtns {
   display: flex;
   flex-direction: column;
   gap: 13px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    & .btn {
+      width: 100%;
+    }
+  }
 }
