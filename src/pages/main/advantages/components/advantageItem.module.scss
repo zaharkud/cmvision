@@ -4,6 +4,15 @@
   display: flex;
   align-items: center;
   gap: 50px;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .graphics {
@@ -12,16 +21,28 @@
   min-height: 150px;
   border-radius: 50%;
   position: relative;
-  & img {
+  img {
     position: absolute;
     bottom: -20px;
     right: -10px;
     width: 110px;
   }
+
+  @media (max-width: 1200px) {
+    min-width: 120px;
+    min-height: 120px;
+    img {
+      width: 80px;
+    }
+  }
 }
 
 .descr {
   max-width: 230px;
+
+  @media (max-width: 450px) {
+    max-width: 80%;
+  }
 }
 .title_h3 {
   margin-bottom: 20px;

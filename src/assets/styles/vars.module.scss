@@ -56,6 +56,10 @@ $MARGIN-TITLE-MINI: 18px;
   color: white;
   font-size: 25px;
   font-weight: 500;
+
+  @media (max-width: 1200px) {
+    font-size: 22px;
+  }
 }
 .title_h4 {
   color: white;
