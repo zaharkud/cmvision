@@ -6,7 +6,11 @@
 .content {
   position: relative;
   z-index: 100;
-  padding: 0 50px 30px 0;
+  padding: 0 50px 50px 0;
+
+  @media (max-width: 450px) {
+    padding: 0 30px 30px 0;
+  }
 }
 .contentBottom {
   margin-top: 60px;

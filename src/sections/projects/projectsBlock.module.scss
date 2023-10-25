@@ -6,16 +6,43 @@
 
 .content {
   padding: 120px 0 160px 0;
+
+  @media (max-width: 700px) {
+    padding: 120px 0;
+  }
 }
 
 .slider {
   display: flex;
   gap: 70px;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: start;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: row;
+    align-items: center;
+  }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 .sliderCards {
   display: flex;
   gap: 70px;
+
+  @media (max-width: 1000px) {
+    flex: 0 0 450px;
+    & > :nth-child(1) {
+      flex: 0 1 450px;
+    }
+    & > :nth-child(2) {
+      display: none;
+    }
+  }
 }
 
 .title_h2__double {
