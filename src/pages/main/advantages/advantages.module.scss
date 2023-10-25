@@ -6,6 +6,10 @@
 
 .content {
   padding: 100px 0 160px 0;
+
+  @media (max-width: 450px) {
+    padding: 100px 0 120px 0;
+  }
 }
 
 .title_h2__double {
