@@ -1,9 +1,16 @@
 import style from "./header.module.scss";
 import logo from "assets/img/logo/logo.png";
+import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
+  const [mobileMenuActive, setMobileMenuActive] = useState(false);
+
+  function burgerBtnHandler() {
+    setMobileMenuActive((prev) => !prev);
+  }
+
   return (
     <header className={style.section}>
       <div className={style.container}>
@@ -13,7 +20,11 @@ const Header: React.FC = () => {
             <p>Системы безопасности</p>
           </Link>
           <nav>
-            <ul className={style.menu}>
+            <ul
+              className={`${style.menu} ${
+                mobileMenuActive ? style.mobileMenu : ""
+              }`}
+            >
               <li>
                 <Link to="/" className={style.link}>
                   Главная
@@ -40,6 +51,16 @@ const Header: React.FC = () => {
                 </Link>
               </li>
             </ul>
+            <div
+              className={`${style.burgerBtn} ${
+                mobileMenuActive ? style.burgerBtnActive : ""
+              }`}
+              onClick={burgerBtnHandler}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </nav>
         </div>
       </div>
