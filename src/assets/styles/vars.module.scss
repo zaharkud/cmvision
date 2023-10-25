@@ -62,9 +62,9 @@ $MARGIN-TITLE-MINI: 18px;
   font-size: 18px;
   font-weight: 500;
 
-  @media (max-width: 680px) {
+  /*@media (max-width: 680px) {
     font-size: 16px;
-  }
+  }*/
 }
 
 .text {
@@ -72,9 +72,9 @@ $MARGIN-TITLE-MINI: 18px;
   letter-spacing: 0.8px;
   font-size: 16px;
 
-  @media (max-width: 680px) {
+  /*@media (max-width: 680px) {
     font-size: 14px;
-  }
+  }*/
 }
 
 .deco {

@@ -4,7 +4,11 @@
 }
 
 .content {
-  padding: 120px 0 360px 0;
+  padding: 160px 0 360px 0;
+
+  @media (max-width: 800px) {
+    padding: 120px 0 200px 0;
+  }
 }
 
 .title_h2 {

@@ -2,12 +2,11 @@
 
 .section {
   height: 90vh;
-  padding: 50px 0;
   position: relative;
   &::before {
     content: "";
     width: 70%;
-    height: 90%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;

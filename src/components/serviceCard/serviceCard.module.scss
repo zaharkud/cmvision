@@ -2,6 +2,7 @@
 
 .content {
   padding: 37px 25px 27px 25px;
+  position: relative;
 
   background-color: $MAIN_GREY;
   border: $BORDER_GREY;
@@ -14,14 +15,32 @@
   &:hover {
     border: $BORDER_YELLOW;
   }
+  /*@media (max-width: 680px) {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }*/
 }
 
 .top {
-  img {
-    margin-bottom: 60px;
-  }
+  flex: 0 0 40px;
+  margin-bottom: 60px;
+
+  /* @media (max-width: 680px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+    img {
+      height: 40px;
+    }
+  }*/
 }
 
+/*.title_h4 {
+  max-width: 200px;
+}*/
 .text {
   margin-top: 25px;
+  /* @media (max-width: 680px) {
+    display: none;
+  }*/
 }
