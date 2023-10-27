@@ -26,6 +26,17 @@
     background-color: $MAIN_BLACK;
     opacity: 0.6;
   }
+  @media (max-width: 1200px) {
+    &::before {
+      background-size: auto 120%;
+      background-position: top right -70vw;
+    }
+  }
+  @media (max-width: 550px) {
+    &::before {
+      background-position: top right -100vh;
+    }
+  }
 }
 
 .content {
@@ -36,8 +47,6 @@
   justify-content: center;
   position: relative;
   z-index: 100;
-  @media (max-width: 1200px) {
-  }
 }
 
 .title {
