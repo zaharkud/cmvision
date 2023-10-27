@@ -42,7 +42,7 @@
   max-width: 230px;
 
   @media (max-width: 450px) {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 .title_h3 {
@@ -50,5 +50,21 @@
 
   @media (max-width: 450px) {
     margin-bottom: 12px;
+  }
+}
+
+.contentLeft {
+  column-gap: 30px;
+  & .graphics img {
+    left: -15px;
+  }
+
+  @media (max-width: 450px) {
+    & .descr {
+      order: 2;
+    }
+    & .graphics {
+      order: 1;
+    }
   }
 }
