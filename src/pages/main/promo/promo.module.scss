@@ -29,12 +29,12 @@
   @media (max-width: 1200px) {
     &::before {
       background-size: auto 120%;
-      background-position: top right -70vw;
+      background-position: top right 70%;
     }
   }
   @media (max-width: 550px) {
     &::before {
-      background-position: top right -100vh;
+      background-position: top right 55%;
     }
   }
 }
