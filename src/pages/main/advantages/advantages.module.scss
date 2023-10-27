@@ -14,6 +14,15 @@
 
 .title_h2__double {
   margin-bottom: 120px;
+
+  @media (max-width: 450px) {
+    margin-bottom: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .advantages {
@@ -40,5 +49,8 @@
     & > :nth-child(4) {
       order: 4;
     }
+  }
+  @media (max-width: 450px) {
+    row-gap: 70px;
   }
 }
