@@ -73,7 +73,7 @@
   align-items: center;
   gap: 60px;
   font-size: 1.2em;
-  animation: mobileMenuStart 0.3s forwards;
+  animation: mobileMenuShow 0.3s forwards;
 
   & body {
     overflow: hidden;
@@ -83,7 +83,7 @@
   }
   & .link {
     position: relative;
-    animation: menuItemDisplay 0.6s;
+    animation: menuItemShow 0.6s;
   }
   &::before {
     content: "";
@@ -98,8 +98,14 @@
     transform: rotate(45deg);
   }
 }
+.mobileMenuClose {
+  & .link {
+    animation: menuItemHide 0.5s;
+  }
+  animation: mobileMenuHide 0.6s;
+}
 
-@keyframes mobileMenuStart {
+@keyframes mobileMenuShow {
   from {
     opacity: 0;
   }
@@ -107,16 +113,36 @@
     opacity: 1;
   }
 }
-@keyframes menuItemDisplay {
+@keyframes menuItemShow {
   from {
     opacity: 0;
-    top: -20px;
+    top: -30px;
   }
   to {
     opacity: 1;
     top: 0;
   }
 }
+
+@keyframes mobileMenuHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes menuItemHide {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: -30px;
+  }
+}
+
 @keyframes mobileMenuDeco {
   from {
     bottom: -50%;

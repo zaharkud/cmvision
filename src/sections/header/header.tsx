@@ -1,19 +1,30 @@
 import style from "./header.module.scss";
 import logo from "assets/img/logo/logo.png";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
+  const mobileMenu = useRef<HTMLUListElement>(null);
+  const burgerBtn = useRef<HTMLDivElement>(null);
 
-  function burgerBtnHandler() {
-    setMobileMenuActive((prev) => !prev);
+  const burgerBtnHandler = () => {
+    mobileMenu?.current?.classList.remove(style.mobileMenuClose);
 
-    mobileMenuActive
-      ? (document.documentElement.style.overflowY = "auto")
-      : (document.documentElement.style.overflowY = "hidden");
-  }
+    if (!mobileMenuActive) {
+      setMobileMenuActive((prev) => !prev);
+      document.documentElement.style.overflowY = "hidden";
+    } else {
+      document.documentElement.style.overflowY = "auto";
+      mobileMenu?.current?.classList.add(style.mobileMenuClose);
+      burgerBtn?.current?.classList.remove(style.burgerBtnActive); //deleting active class from burgerBtn to show animation without delay
+
+      setTimeout(() => {
+        setMobileMenuActive((prev) => !prev);
+      }, 500); //adding time for hide-menu animation
+    }
+  };
 
   return (
     <header className={style.section}>
@@ -25,6 +36,7 @@ const Header: React.FC = () => {
           </Link>
           <nav>
             <ul
+              ref={mobileMenu}
               className={`${style.menu} ${
                 mobileMenuActive ? style.mobileMenu : ""
               }`}
@@ -56,6 +68,7 @@ const Header: React.FC = () => {
               </li>
             </ul>
             <div
+              ref={burgerBtn}
               className={`${style.burgerBtn} ${
                 mobileMenuActive ? style.burgerBtnActive : ""
               }`}
