@@ -94,10 +94,11 @@
     width: 100vh;
     background-color: $ACCENT_YELLOW;
     opacity: 0.6;
-    animation: mobileMenuDeco 2s ease-out;
+    animation: mobileMenuDeco 25s;
     transform: rotate(45deg);
   }
 }
+
 @keyframes mobileMenuStart {
   from {
     opacity: 0;
