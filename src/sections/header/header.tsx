@@ -9,6 +9,10 @@ const Header: React.FC = () => {
 
   function burgerBtnHandler() {
     setMobileMenuActive((prev) => !prev);
+
+    mobileMenuActive
+      ? (document.documentElement.style.overflowY = "auto")
+      : (document.documentElement.style.overflowY = "hidden");
   }
 
   return (

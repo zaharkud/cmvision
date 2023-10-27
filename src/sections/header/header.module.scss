@@ -72,7 +72,31 @@
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  font-size: 1.2em;
   animation: mobileMenuStart 0.3s forwards;
+
+  & body {
+    overflow: hidden;
+  }
+  & li {
+    position: relative;
+  }
+  & .link {
+    position: relative;
+    animation: menuItemDisplay 0.6s;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    height: 1px;
+    width: 100vh;
+    background-color: $ACCENT_YELLOW;
+    opacity: 0.6;
+    animation: mobileMenuDeco 2s ease-out;
+    transform: rotate(45deg);
+  }
 }
 @keyframes mobileMenuStart {
   from {
@@ -80,5 +104,23 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes menuItemDisplay {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes mobileMenuDeco {
+  from {
+    bottom: -50%;
+  }
+  to {
+    bottom: 150%;
   }
 }
