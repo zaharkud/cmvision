@@ -29,8 +29,8 @@ const Footer: React.FC = () => {
           <div className={style.footerCenter}>
             <div className={style.column_1}>
               <p className={style.text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                sagittis mauris ac enim sagittis dignissim.
+                Установка и продажа систем видеонаблюдения, систем обеспечения
+                безопасности и контроля на Кавказких Минеральных Водах
               </p>
               <div className={style.social}>
                 <a href="#">

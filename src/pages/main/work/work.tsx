@@ -13,10 +13,12 @@ const Work: React.FC = () => {
                   <span>1</span>
                 </div>
                 <div className={style.descr}>
-                  <h4 className={style.title_h4}>Lorem ipsum dolor sit amet</h4>
+                  <h4 className={style.title_h4}>
+                    Выезд на объект нашего специалиста
+                  </h4>
                   <p className={style.text}>
-                    consectetur adipiscing elit. Nunc sagittis mauris ac enim
-                    sagittis dignissim.
+                    Специалист осмотрит объект, соорентирует по ценам и
+                    необходимому оборудованию
                   </p>
                 </div>
               </div>
@@ -25,10 +27,12 @@ const Work: React.FC = () => {
                   <span>2</span>
                 </div>
                 <div className={style.descr}>
-                  <h4 className={style.title_h4}>Lorem ipsum dolor sit amet</h4>
+                  <h4 className={style.title_h4}>
+                    Подготовка сметы и других документов
+                  </h4>
                   <p className={style.text}>
-                    consectetur adipiscing elit. Nunc sagittis mauris ac enim
-                    sagittis dignissim.
+                    Обсуждение, составление сметы и коммерческого предложения.
+                    Если всё подходит - заключаем договор на оказание услуг
                   </p>
                 </div>
               </div>
@@ -37,10 +41,10 @@ const Work: React.FC = () => {
                   <span>3</span>
                 </div>
                 <div className={style.descr}>
-                  <h4 className={style.title_h4}>Lorem ipsum dolor sit amet</h4>
+                  <h4 className={style.title_h4}>Монтаж оборудования</h4>
                   <p className={style.text}>
-                    consectetur adipiscing elit. Nunc sagittis mauris ac enim
-                    sagittis dignissim.
+                    После выполнения работ и того, как вы примете объект
+                    подписываем акт о выполненных работах
                   </p>
                 </div>
               </div>
