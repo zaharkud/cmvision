@@ -63,6 +63,13 @@
 .social {
   display: flex;
   gap: 40px;
+
+  @media (max-width: 800px) {
+    gap: 50px;
+    & img {
+      max-height: 25px;
+    }
+  }
 }
 
 .title_h4 {
