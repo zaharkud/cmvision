@@ -1,4 +1,5 @@
 import ProjectCard from "./projectCard/ProjectCard";
+import ProjectCardBtn from "./projectCardBtn/ProjectCardBtn";
 import style from "./projectsBlock.module.scss";
 
 const Projects: React.FC = () => {
@@ -14,6 +15,7 @@ const Projects: React.FC = () => {
             <div className={style.sliderCards}>
               <ProjectCard></ProjectCard>
               <ProjectCard></ProjectCard>
+              <ProjectCardBtn></ProjectCardBtn>
             </div>
             <div className={style.nextBtn}>
               <div></div>
