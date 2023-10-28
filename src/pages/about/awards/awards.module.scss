@@ -12,35 +12,10 @@
   margin-bottom: 80px;
 }
 
-.documentsList {
+.filesList {
   display: flex;
   gap: 60px;
-
-  overflow-x: scroll;
-}
-.documentsItem {
-  position: relative;
-  height: 290px;
-  width: 210px;
-  & img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 90%;
-    max-height: 90%;
-    z-index: 150;
-  }
-  & .bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: $MAIN_GREY;
-    border: $BORDER_GREY;
-    height: 90%;
-    width: 90%;
-    transition: border 0.3s;
-  }
-  &:hover .bg {
-    border: $BORDER_YELLOW;
-  }
+  white-space: nowrap;
+  overflow-x: auto;
+  max-height: 290px;
 }
