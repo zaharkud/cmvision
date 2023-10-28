@@ -36,15 +36,21 @@
   overflow-x: auto;
 
   & > article {
-    width: 465px;
+    width: 450px;
     max-width: 100%;
   }
-  /*@media (max-width: 1000px) {
-    flex: 0 0 450px;
+
+  @media (min-width: 1200px) {
     & > article {
-      flex: 0 1 450px;
+      display: none;
     }
-  }*/
+    & > article:nth-child(1) {
+      display: flex;
+    }
+    & > article:nth-child(2) {
+      display: flex;
+    }
+  }
 }
 
 .title_h2__double {
@@ -52,7 +58,6 @@
 }
 
 .nextBtn {
-  display: none;
   cursor: pointer;
   position: relative;
   width: 80px;
@@ -88,5 +93,9 @@
     background-color: $ACCENT_YELLOW;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transform: rotate(-45deg);
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
   }
 }
