@@ -30,7 +30,13 @@ $MARGIN-TITLE-MINI: 18px;
   -webkit-text-stroke: 1px $ACCENT_YELLOW;
   text-transform: uppercase;
   margin-bottom: 100px;
+
+  @media (max-width: 800px) {
+    font-size: 80px;
+    word-break: break-all;
+  }
 }
+
 .title_h2 {
   color: white;
   font-size: 40px;

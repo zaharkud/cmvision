@@ -1,13 +1,20 @@
 import style from "./header.module.scss";
 import logo from "assets/img/logo/logo.png";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   const mobileMenu = useRef<HTMLUListElement>(null);
   const burgerBtn = useRef<HTMLDivElement>(null);
+
+  const currentLocation = useLocation();
+
+  //Closing mobile menu if user clicks on the same page as current
+  useEffect(() => {
+    setMobileMenuActive(false);
+  }, [currentLocation]);
 
   const burgerBtnHandler = () => {
     mobileMenu?.current?.classList.remove(style.mobileMenuClose);
@@ -18,11 +25,14 @@ const Header: React.FC = () => {
     } else {
       document.documentElement.style.overflowY = "auto";
       mobileMenu?.current?.classList.add(style.mobileMenuClose);
-      burgerBtn?.current?.classList.remove(style.burgerBtnActive); //deleting active class from burgerBtn to show animation without delay
 
+      //deleting active class from burgerBtn to show animation without delay
+      burgerBtn?.current?.classList.remove(style.burgerBtnActive);
+
+      //adding time for hide-menu animation
       setTimeout(() => {
         setMobileMenuActive((prev) => !prev);
-      }, 500); //adding time for hide-menu animation
+      }, 500);
     }
   };
 

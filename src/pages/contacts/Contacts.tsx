@@ -1,6 +1,6 @@
 import Header from "sections/header/header";
 import Footer from "sections/footer/Footer";
-import ContactsSection from "./contacts/ContactsSection";
+import ContactsSection from "./contactsSection/ContactsSection";
 
 const Contacts: React.FC = () => {
   return (

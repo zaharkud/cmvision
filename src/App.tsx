@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "assets/styles/App.scss";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Main from "pages/main/Main";
 import Contacts from "pages/contacts/Contacts";
@@ -11,6 +11,13 @@ import Projects from "pages/projects/Projects";
 import Services from "pages/services/Services";
 
 function App() {
+  const currentLocation = useLocation();
+
+  useEffect(() => {
+    //letting scroll after closing mobile menu cos of changing page
+    document.documentElement.style.overflowY = "auto";
+  }, [currentLocation]);
+
   return (
     <div className="App">
       <div className="wrapper">

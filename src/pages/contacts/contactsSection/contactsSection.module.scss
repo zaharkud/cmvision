@@ -2,6 +2,10 @@
 
 .content {
   padding: 100px 0 360px 0;
+
+  @media (max-width: 800px) {
+    padding: 100px 0 260px 0;
+  }
 }
 
 .contactsCard {
@@ -9,6 +13,18 @@
   background-color: $ACCENT_YELLOW;
   display: flex;
   justify-content: space-between;
+  column-gap: 20px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    row-gap: 100px;
+  }
+  @media (max-width: 550px) {
+    padding: 45px 35px;
+  }
+  @media (max-width: 400px) {
+    padding: 35px 25px;
+  }
 }
 .contactsForm {
   flex: 0 0 30%;
@@ -76,6 +92,28 @@
     flex-direction: column;
     justify-content: flex-end;
   }
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+
+    & > :first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      background-size: 300px;
+      background-position: top -30px left -120px;
+    }
+    & > :nth-child(2) {
+      align-items: end;
+      background-size: 350px;
+      background-position: top -100px left -140px;
+    }
+    & > :nth-child(3) {
+      align-items: flex-end;
+    }
+  }
 }
 .socialItem {
   background-color: $MAIN_BLACK;
@@ -95,5 +133,16 @@
   }
   &:hover {
     cursor: pointer;
+  }
+
+  @media (max-width: 750px) {
+    & .socialId {
+      font-size: 17px;
+    }
+  }
+  @media (max-width: 550px) {
+    & .socialId {
+      font-size: 15px;
+    }
   }
 }
