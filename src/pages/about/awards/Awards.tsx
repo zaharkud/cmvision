@@ -1,17 +1,9 @@
-import { useRef } from "react";
-
 import style from "./awards.module.scss";
 
 import mock from "assets/img/documents/mock.jpg";
 import mock2 from "assets/img/promo/promo.jpg";
-import FileItem from "components/fileItem/fileItem";
 
 const Awards: React.FC = () => {
-  //TODO: перенести рассчет длины на все элементы
-  //calculating max block`s witdh based on the inner image
-  const imgRef = useRef<HTMLImageElement>(null);
-  const filesItemMaxWidth = imgRef?.current?.clientWidth;
-
   return (
     <section className={style.section}>
       <div className={style.container}>
@@ -21,9 +13,15 @@ const Awards: React.FC = () => {
             <h2>И мы хороши в своем деле</h2>
           </div>
           <div className={style.filesList}>
-            <FileItem img={mock}></FileItem>
-            <FileItem img={mock}></FileItem>
-            <FileItem img={mock2}></FileItem>
+            <div className={style.filesItem}>
+              <img src={mock} alt="document" />
+            </div>
+            <div className={style.filesItem}>
+              <img src={mock} alt="document" />
+            </div>
+            <div className={style.filesItem}>
+              <img src={mock} alt="document" />
+            </div>
           </div>
         </div>
       </div>

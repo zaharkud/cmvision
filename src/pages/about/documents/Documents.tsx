@@ -25,11 +25,8 @@ const Documents: React.FC = () => {
             <div className={style.filesItem}>
               <img src={mock2} alt="document" />
             </div>
-            <div
-              className={style.filesItem}
-              style={{ maxWidth: filesItemMaxWidth }}
-            >
-              <img ref={imgRef} src={mock} alt="document" />
+            <div className={style.filesItem}>
+              <img src={mock} alt="document" />
             </div>
           </div>
         </div>
