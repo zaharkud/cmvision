@@ -9,9 +9,10 @@
   justify-content: space-between;
   gap: 30px;
   margin-bottom: 80px;
+  overflow-x: auto;
 
   & > article {
-    flex: 0 1 25%;
+    min-width: 255px;
     cursor: pointer;
   }
 }
@@ -19,6 +20,11 @@
 .serviceInfo {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 80px;
+  }
 }
 .text {
   flex: 0 0 45%;
@@ -46,5 +52,12 @@
     z-index: -1;
     top: 20px;
     left: 100px;
+  }
+
+  @media (max-width: 550px) {
+    &::after {
+      top: 20px;
+      left: 50%;
+    }
   }
 }

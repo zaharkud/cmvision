@@ -5,6 +5,10 @@
 }
 .content {
   padding: 120px 0 300px 0;
+
+  @media (max-width: 800px) {
+    padding: 100px 0 200px 0;
+  }
 }
 
 .title_h2__double {
@@ -14,6 +18,10 @@
 .solutionsSwitcher {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 .solutionsMenu {
   flex: 0 0 30%;
@@ -21,6 +29,15 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 50px;
+
+    ul {
+      flex-direction: row;
+      overflow-x: auto;
+    }
   }
 }
 .btn {
@@ -32,6 +49,11 @@
     border: $BORDER_YELLOW;
     color: $MAIN_BLACK;
   }
+
+  @media (max-width: 1000px) {
+    white-space: nowrap;
+    min-width: auto;
+  }
 }
 
 .solutionsCard {
@@ -42,6 +64,16 @@
     position: relative;
     z-index: 100;
     padding: 0 50px 50px 0;
+  }
+  .cardContent::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $MAIN_BLACK;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    z-index: -1;
   }
   .cardImg {
     & img {
@@ -78,17 +110,25 @@
     margin-top: 40px;
     font-weight: 500;
   }
-  .bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: $MAIN_BLACK;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
-  }
-
   .title_h3 {
     color: $ACCENT_YELLOW;
     margin-bottom: 28px;
+  }
+
+  @media (max-width: 650px) {
+    .cardInfo {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .cardRight {
+      max-width: 320px;
+    }
+    .cardContent {
+      padding: 0 30px 30px 0;
+    }
+    .cardContent::after {
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+    }
   }
 }

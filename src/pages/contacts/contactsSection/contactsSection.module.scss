@@ -50,10 +50,16 @@
     font-weight: 200;
     font-size: 16px;
     padding-bottom: 15px;
-    border-bottom: $BORDER_BLACK;
+    border-bottom: $BORDER_GREY;
   }
   & input::placeholder {
-    opacity: 1;
+    color: $MAIN_GREY;
+  }
+  & input:focus {
+    border-bottom: $BORDER_BLACK;
+  }
+  & input:focus::placeholder {
+    color: $MAIN_BLACK;
   }
   & input:not(:last-of-type) {
     margin-bottom: 55px;

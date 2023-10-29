@@ -16,9 +16,9 @@ const Solutions: React.FC = () => {
               <ul>
                 <li className={style.btn}>Розничный магазин</li>
                 <li className={style.btn}>Розничный магазин</li>
+                <li className={style.btn}>Розничный магазин efef</li>
                 <li className={style.btn}>Розничный магазин</li>
-                <li className={style.btn}>Розничный магазин</li>
-                <li className={style.btn}>Розничный магазин</li>
+                <li className={style.btn}>Розничный магазинuu </li>
               </ul>
             </div>
             <div className={style.solutionsCard}>
@@ -53,7 +53,6 @@ const Solutions: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className={style.bg}></div>
             </div>
           </div>
         </div>
