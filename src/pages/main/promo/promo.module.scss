@@ -2,6 +2,7 @@
 
 .section {
   height: 90svh;
+  max-height: 100%;
   position: relative;
   &::before {
     content: "";
