@@ -35,8 +35,10 @@
   gap: 70px;
   overflow-x: auto;
 
+  @include scrollbarDark;
+
   & > article {
-    flex: 0 0 450px;
+    flex: 0 0 440px;
     max-width: 100%;
   }
 

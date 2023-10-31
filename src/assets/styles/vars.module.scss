@@ -11,6 +11,49 @@ $PADDING-SEC-EXTRA: 150px;
 $MARGIN-TITLE: 80px;
 $MARGIN-TITLE-MINI: 18px;
 
+@mixin scrollbarDark {
+  &::-webkit-scrollbar {
+    height: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $MAIN_GREY;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.247);
+    border: 8px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+  }
+}
+@mixin scrollbarGrey {
+  &::-webkit-scrollbar {
+    height: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $MAIN_GREY;
+    border: 8px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+  }
+}
+@mixin scrollbarLight {
+  &::-webkit-scrollbar {
+    height: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 10px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+  }
+}
+
 .container {
   max-width: 1145px;
   margin: 0 auto;

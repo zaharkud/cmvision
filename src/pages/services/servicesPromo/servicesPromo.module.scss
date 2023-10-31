@@ -11,6 +11,8 @@
   margin-bottom: 80px;
   overflow-x: auto;
 
+  @include scrollbarGrey;
+
   & > article {
     min-width: 255px;
     cursor: pointer;
