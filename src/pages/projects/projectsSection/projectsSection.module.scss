@@ -11,8 +11,15 @@
 .projectsList {
   margin-top: 250px;
   display: flex;
-  column-gap: 150px;
+  column-gap: 130px;
   row-gap: 200px;
   padding-left: 60px;
   flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    row-gap: 150px;
+  }
 }

@@ -4,13 +4,22 @@
 
 .card {
   position: relative;
-  flex: 0 0 40%;
+  flex: 1 1 450px;
+  max-width: 80%;
+
+  @media (max-width: 550px) {
+    max-width: 100%;
+  }
 }
 .content {
   position: relative;
   z-index: 100;
   border: $BORDER_YELLOW;
   padding: 0 50px 50px 50px;
+
+  @media (max-width: 600px) {
+    padding: 0 30px 30px 30px;
+  }
 }
 .contentTop {
   border: 1px solid transparent;
@@ -26,11 +35,23 @@
   &:hover {
     border: $BORDER_YELLOW;
   }
+
+  @media (max-width: 600px) {
+    margin-left: -90px;
+  }
 }
 .contentBottom {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 600px) {
+    margin-top: 40px;
+    margin-left: -90px;
+    background-color: $MAIN_BLACK;
+    border-top: 20px solid $MAIN_BLACK;
+    border-bottom: 20px solid $MAIN_BLACK;
+  }
 }
 
 .title_h3 {
@@ -40,4 +61,8 @@
 
 .text {
   max-width: 70%;
+
+  @media (max-width: 500px) {
+    max-width: 80%;
+  }
 }
