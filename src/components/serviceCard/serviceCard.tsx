@@ -3,7 +3,7 @@ import style from "./serviceCard.module.scss";
 interface IServiceCard {
   title: string;
   text: string;
-  img: any;
+  img: string;
 }
 
 const ServiceCard = ({ title, text, img }: IServiceCard) => {
