@@ -61,25 +61,32 @@ const retailSolution = () => {
             <div className={style.descr}>
               <h3 className={style.title_h3}>Розничный магазин</h3>
               <p className={style.text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                sagittis mauris ac enim sagittis dignissim.
+                Установка системы видеонаблюдения в розничном магазине.
+                Используются купольные камеры внутреннего типа. Настройка
+                удаленного доступа на видеорегистраторе в подарок.
               </p>
             </div>
           </div>
           <div className={style.cardRight}>
             <p className={style.purchaseLine}>
-              Камера 15 шт. по
-              <br /> 2 500 РУБ
+              Монтаж кабеля, 20м. по 16р.
+              <br /> 320 РУБ
             </p>
             <p className={style.purchaseLine}>
-              Ноутбук 2 шт. по <br />
-              25 000 РУБ
+              Установка камер видеонаблюдения 4шт. по 550р.
+              <br />
+              2200 РУБ
             </p>
             <p className={style.purchaseLine}>
-              Провод 35 м. по <br />
-              300 РУБ
+              Подключение блока питания 1шт. по 350р.
+              <br />
+              350 РУБ
             </p>
-            <p className={style.finalCost}>50 000 РУБ</p>
+            <p className={style.purchaseLine}>
+              Установка и настройка видеорегистратора <br />
+              1500 РУБ
+            </p>
+            <p className={style.finalCost}>4 370 РУБ</p>
           </div>
         </div>
       </div>
