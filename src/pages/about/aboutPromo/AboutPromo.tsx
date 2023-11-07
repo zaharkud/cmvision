@@ -36,11 +36,11 @@ const AboutPromo: React.FC = () => {
                 <p className={style.descr}>лет на рынке</p>
               </div>
               <div className={style.statItem}>
-                <span className={style.num}>1500</span>
+                <span className={style.num}>345</span>
                 <p className={style.descr}>выполненных заказов</p>
               </div>
               <div className={style.statItem}>
-                <span className={style.num}>74</span>
+                <span className={style.num}>242</span>
                 <p className={style.descr}>клиента</p>
               </div>
             </div>
