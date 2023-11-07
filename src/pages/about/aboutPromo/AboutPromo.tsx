@@ -10,20 +10,19 @@ const AboutPromo: React.FC = () => {
             <div className={style.aboutInfo}>
               <div className={style.text}>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit.
+                  Наша команда – это высококвалифицированные специалисты,
+                  которые готовы спроектировать, установить и настроить
+                  видеонаблюдение на объекте любой сложности. Мы работаем с
+                  современным оборудованием, знаем тонкости и особенности работы
+                  с оборудование разных производителей.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.
+                  Работаем оперативно. Монтаж системы видеонаблюдения может быть
+                  осуществлен всего за 1 день.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit.
+                  Сотрудничаем как с физическими, так и с юридическими лицами,
+                  предоставляя все необходимые документы для отчетности.
                 </p>
               </div>
             </div>
