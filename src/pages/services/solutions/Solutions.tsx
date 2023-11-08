@@ -167,7 +167,7 @@ const warehouseSolution = () => {
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
             <div className={style.descr}>
-              <h3 className={style.title_h3}>Банк</h3>
+              <h3 className={style.title_h3}>Склад</h3>
               <p className={style.text}>
                 Установка системы видеонаблюдения в складском помещении.
                 Используются уличные камеры видеонаблюдения для контроля за
@@ -213,7 +213,7 @@ const restaurantSolution = () => {
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
             <div className={style.descr}>
-              <h3 className={style.title_h3}>Банк</h3>
+              <h3 className={style.title_h3}>Ресторан</h3>
               <p className={style.text}>
                 Установка системы видеонаблюдения в ресторане. Используются
                 купольные камеры внутреннего типа. Настройка удаленного доступа
@@ -262,7 +262,7 @@ const officeSolution = () => {
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
             <div className={style.descr}>
-              <h3 className={style.title_h3}>Банк</h3>
+              <h3 className={style.title_h3}>Офис</h3>
               <p className={style.text}>
                 Установка системы видеонаблюдения в помещениях офиса.
                 Используются купольные камеры внутреннего типа. Настройка
@@ -311,7 +311,7 @@ const houseSolution = () => {
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
             <div className={style.descr}>
-              <h3 className={style.title_h3}>Банк</h3>
+              <h3 className={style.title_h3}>Частный дом</h3>
               <p className={style.text}>
                 Установка системы видеонаблюдения в на территории частного дома.
                 Используются уличные камеры видеонаблюдения для контроля за
