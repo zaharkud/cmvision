@@ -97,12 +97,17 @@
     flex: 0 0 45%;
     border: $BORDER_YELLOW;
     padding: 40px;
+    & > :not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
   .purchaseLine {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
-    &:not(:last-child) {
-      margin-bottom: 15px;
+    & :last-child {
+      color: $ACCENT_YELLOW;
+      font-weight: 500;
+      margin-top: 4px;
     }
   }
   .finalCost {
@@ -114,6 +119,11 @@
   .title_h3 {
     color: $ACCENT_YELLOW;
     margin-bottom: 28px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   @media (max-width: 650px) {
