@@ -4,6 +4,13 @@ import style from "./solutions.module.scss";
 
 import mock from "assets/img/projects/mock.jpg";
 
+import factorySolutionImage from "assets/img/solutions/factorySolutionImage.jpg";
+import houseSolutionImage from "assets/img/solutions/houseSolutionImage.jpg";
+import officeSolutionImage from "assets/img/solutions/officeSolutionImage.jpg";
+import restaurantSolutionImage from "assets/img/solutions/restaurantSolutionImage.jpg";
+import retailSolutionImage from "assets/img/solutions/retailSolutionImage.jpg";
+import warehouseSolutionImage from "assets/img/solutions/warehouseSolutionImage.jpg";
+
 const Solutions: React.FC = () => {
   const [solutionDescription, setSolutionDescription] =
     useState<JSX.Element>(retailSolution);
@@ -72,7 +79,7 @@ const retailSolution = () => {
     <div className={style.solutionsCard}>
       <div className={style.cardContent}>
         <div className={style.cardImg}>
-          <img src={mock} alt="gazprom"></img>
+          <img src={retailSolutionImage} alt="Розничный магазин"></img>
         </div>
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
@@ -121,7 +128,7 @@ const factorySolution = () => {
     <div className={style.solutionsCard}>
       <div className={style.cardContent}>
         <div className={style.cardImg}>
-          <img src={mock} alt="gazprom"></img>
+          <img src={factorySolutionImage} alt="Производство"></img>
         </div>
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
@@ -173,7 +180,7 @@ const warehouseSolution = () => {
     <div className={style.solutionsCard}>
       <div className={style.cardContent}>
         <div className={style.cardImg}>
-          <img src={mock} alt="gazprom"></img>
+          <img src={warehouseSolutionImage} alt="Склад"></img>
         </div>
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
@@ -225,7 +232,7 @@ const restaurantSolution = () => {
     <div className={style.solutionsCard}>
       <div className={style.cardContent}>
         <div className={style.cardImg}>
-          <img src={mock} alt="gazprom"></img>
+          <img src={restaurantSolutionImage} alt="Ресторан"></img>
         </div>
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
@@ -279,7 +286,7 @@ const officeSolution = () => {
     <div className={style.solutionsCard}>
       <div className={style.cardContent}>
         <div className={style.cardImg}>
-          <img src={mock} alt="gazprom"></img>
+          <img src={officeSolutionImage} alt="Офис"></img>
         </div>
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>
@@ -333,7 +340,7 @@ const houseSolution = () => {
     <div className={style.solutionsCard}>
       <div className={style.cardContent}>
         <div className={style.cardImg}>
-          <img src={mock} alt="gazprom"></img>
+          <img src={houseSolutionImage} alt="Частный дом"></img>
         </div>
         <div className={style.cardInfo}>
           <div className={style.cardLeft}>

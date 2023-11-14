@@ -1,6 +1,7 @@
 @import "assets/styles/vars.module.scss";
 
 .content {
+  min-height: 1000px;
   padding: 100px 0 120px 0;
 }
 
@@ -42,6 +43,8 @@
   position: relative;
 
   & img {
+    position: absolute;
+    top: 50px;
     height: 200px;
     object-fit: contain;
   }
