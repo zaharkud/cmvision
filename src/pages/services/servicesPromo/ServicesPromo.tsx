@@ -3,7 +3,7 @@ import { useState } from "react";
 import ServiceCardMini from "components/serviceCard/serviceCardMini";
 import style from "./servicesPromo.module.scss";
 
-import camSystemsImage from "assets/img/techEquipment/cam__6.webp";
+import camSystemsImage from "assets/img/techEquipment/cams/ipCam.webp";
 import securitySystemsImage from "assets/img/techEquipment/securitySystems.webp";
 import pacsSystesImage from "assets/img/techEquipment/pacsSystems.webp";
 import soundSystemsImage from "assets/img/techEquipment/soundSystems.webp";
