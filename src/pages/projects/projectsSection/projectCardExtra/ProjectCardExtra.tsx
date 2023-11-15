@@ -15,6 +15,7 @@ const ProjectCardExtra: React.FC = () => {
     officeSolutionImage,
     restaurantSolutionImage,
     retailSolutionImage,
+    warehouseSolutionImage,
   ];
 
   const [imageCount, setImageCount] = useState<number>(0);
@@ -45,20 +46,8 @@ const ProjectCardExtra: React.FC = () => {
               changeCount();
             }}
           />
-          <img
-            src={images[imageCount - 1]}
-            alt="gazprom"
-            onClick={() => {
-              changeCount();
-            }}
-          />
-          <img
-            src={images[imageCount - 2]}
-            alt="gazprom"
-            onClick={() => {
-              changeCount();
-            }}
-          />
+          <img src={images[2]} alt="gazprom" />
+          <img src={images[1]} alt="gazprom" />
         </div>
         <div className={style.contentRight}>
           <div className={style.sliderBtns}>
