@@ -1,15 +1,10 @@
-import { useRef } from "react";
-
 import style from "./documents.module.scss";
 
-import mock from "assets/img/documents/mock.jpg";
-import mock2 from "assets/img/promo/promo.jpg";
+import certificate__1 from "assets/img/documents/certificates/certificate__1.jpg";
+import certificate__2 from "assets/img/documents/certificates/certificate__2.jpg";
+import certificate__3 from "assets/img/documents/certificates/certificate__3.jpg";
 
 const Documents: React.FC = () => {
-  //calculating max block`s witdh based on the inner image
-  const imgRef = useRef<HTMLImageElement>(null);
-  const filesItemMaxWidth = imgRef?.current?.clientWidth;
-
   return (
     <section className={style.section}>
       <div className={style.container}>
@@ -20,13 +15,13 @@ const Documents: React.FC = () => {
           </div>
           <div className={style.filesList}>
             <div className={style.filesItem}>
-              <img src={mock} alt="document" />
+              <img src={certificate__1} alt="Сертификат" />
             </div>
             <div className={style.filesItem}>
-              <img src={mock2} alt="document" />
+              <img src={certificate__2} alt="Сертификат" />
             </div>
             <div className={style.filesItem}>
-              <img src={mock} alt="document" />
+              <img src={certificate__3} alt="Сертификат" />
             </div>
           </div>
         </div>

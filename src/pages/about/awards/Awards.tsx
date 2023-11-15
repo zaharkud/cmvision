@@ -1,7 +1,8 @@
 import style from "./awards.module.scss";
 
-import mock from "assets/img/documents/mock.jpg";
-import mock2 from "assets/img/promo/promo.jpg";
+import award__1 from "assets/img/documents/awards/award__1.jpg";
+import award__2 from "assets/img/documents/awards/award__2.jpg";
+import award__3 from "assets/img/documents/awards/award__3.jpg";
 
 const Awards: React.FC = () => {
   return (
@@ -14,13 +15,13 @@ const Awards: React.FC = () => {
           </div>
           <div className={style.filesList}>
             <div className={style.filesItem}>
-              <img src={mock} alt="document" />
+              <img src={award__1} alt="Награда" />
             </div>
             <div className={style.filesItem}>
-              <img src={mock} alt="document" />
+              <img src={award__2} alt="Награда" />
             </div>
             <div className={style.filesItem}>
-              <img src={mock} alt="document" />
+              <img src={award__3} alt="Награда" />
             </div>
           </div>
         </div>
