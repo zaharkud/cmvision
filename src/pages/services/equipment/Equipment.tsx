@@ -13,7 +13,8 @@ import miniCam from "assets/img/techEquipment/cams/miniCam.webp";
 import ipCam from "assets/img/techEquipment/cams/ipCam.webp";
 import outsideCam from "assets/img/techEquipment/cams/outsideCam.webp";
 
-import gaussLogo from "assets/img/producersLogos/gauss.jpg";
+import hikvisionProducer from "assets/img/producersLogos/hikvisionProducer.webp";
+import dahuaProducer from "assets/img/producersLogos/dahuaProducer.jpg";
 
 const Equipment: React.FC = () => {
   const [equipmentContent, setEquipmentContent] =
@@ -67,8 +68,20 @@ const Equipment: React.FC = () => {
               <div className={style.producers}>
                 <h3 className={style.title_h3}>Производители</h3>
                 <div className={style.producersLogos}>
-                  <img src={gaussLogo} alt="Gauss" />
-                  <img src={gaussLogo} alt="Gauss" />
+                  <a
+                    href="https://hikvision.ru/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={hikvisionProducer} alt="HikVision" />
+                  </a>
+                  <a
+                    href="https://www.dahuasecurity.com/ea"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={dahuaProducer} alt="Dahua" />
+                  </a>
                 </div>
               </div>
             </div>
