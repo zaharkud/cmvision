@@ -229,3 +229,19 @@ $MARGIN-TITLE-MINI: 18px;
     }
   }
 }
+
+.sliderBtns {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+
+.btnCircle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: $BORDER_YELLOW;
+  &__active {
+    background-color: $ACCENT_YELLOW;
+  }
+}
