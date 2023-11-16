@@ -2,18 +2,13 @@ import style from "./projectCard.module.scss";
 
 import { useState } from "react";
 
-import officeSolutionImage from "assets/img/solutions/officeSolutionImage.jpg";
-import restaurantSolutionImage from "assets/img/solutions/restaurantSolutionImage.jpg";
-import retailSolutionImage from "assets/img/solutions/retailSolutionImage.jpg";
-import warehouseSolutionImage from "assets/img/solutions/warehouseSolutionImage.jpg";
+interface IProjectCard {
+  images: string[];
+  title: string;
+  description: JSX.Element;
+}
 
-const ProjectCard: React.FC = () => {
-  const images: string[] = [
-    officeSolutionImage,
-    restaurantSolutionImage,
-    retailSolutionImage,
-  ];
-
+const ProjectCard = ({ images, title, description }: IProjectCard) => {
   const [imageCount, setImageCount] = useState<number>(0);
 
   //меняем state с порядковым номером изображения из массива
@@ -40,15 +35,12 @@ const ProjectCard: React.FC = () => {
             changeCount();
           }}
         >
-          <img src={images[imageCount]} alt="gazprom" />
+          <img src={images[imageCount]} alt="Выполненный проект" />
         </div>
         <div className={style.contentBottom}>
           <div className={style.descr}>
-            <h3 className={style.title_h3}>ОАО “Газпром”</h3>
-            <p className={style.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              sagittis mauris ac enim sagittis dignissim.
-            </p>
+            <h3 className={style.title_h3}>{title}</h3>
+            <div className={style.text}>{description}</div>
           </div>
           <div className={style.sliderBtns}>
             {images.map((item, index) => {

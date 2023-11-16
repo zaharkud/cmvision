@@ -2,17 +2,13 @@ import style from "./projectCardMini.module.scss";
 
 import { useState } from "react";
 
-import officeSolutionImage from "assets/img/solutions/officeSolutionImage.jpg";
-import restaurantSolutionImage from "assets/img/solutions/restaurantSolutionImage.jpg";
-import retailSolutionImage from "assets/img/solutions/retailSolutionImage.jpg";
+interface IProjectCard {
+  images: string[];
+  title: string;
+  description: JSX.Element;
+}
 
-const ProjectCardMini: React.FC = () => {
-  const images: string[] = [
-    officeSolutionImage,
-    restaurantSolutionImage,
-    retailSolutionImage,
-  ];
-
+const ProjectCardMini = ({ images, title, description }: IProjectCard) => {
   const [imageCount, setImageCount] = useState<number>(0);
 
   //меняем state с порядковым номером изображения из массива
@@ -43,11 +39,8 @@ const ProjectCardMini: React.FC = () => {
         </div>
         <div className={style.contentBottom}>
           <div className={style.descr}>
-            <h3 className={style.title_h3}>ОАО “Газпром”</h3>
-            <p className={style.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              sagittis mauris ac enim sagittis dignissim.
-            </p>
+            <h3 className={style.title_h3}>{title}</h3>
+            <div className={style.text}>{description}</div>
           </div>
           <div className={style.sliderBtns}>
             {images.map((item, index) => {

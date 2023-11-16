@@ -2,22 +2,13 @@ import style from "./projectCardExtra.module.scss";
 
 import { useState } from "react";
 
-import SliderBtns from "components/sliderBtns/SliderBtns";
-import mock from "assets/img/projects/mock.jpg";
+interface IProjectCard {
+  images: string[];
+  title: string;
+  description: JSX.Element;
+}
 
-import officeSolutionImage from "assets/img/solutions/officeSolutionImage.jpg";
-import restaurantSolutionImage from "assets/img/solutions/restaurantSolutionImage.jpg";
-import retailSolutionImage from "assets/img/solutions/retailSolutionImage.jpg";
-import warehouseSolutionImage from "assets/img/solutions/warehouseSolutionImage.jpg";
-
-const ProjectCardExtra: React.FC = () => {
-  const images: string[] = [
-    officeSolutionImage,
-    restaurantSolutionImage,
-    retailSolutionImage,
-    warehouseSolutionImage,
-  ];
-
+const ProjectCardExtra = ({ images, title, description }: IProjectCard) => {
   const [imageCount, setImageCount] = useState<number>(0);
 
   //меняем state с порядковым номером изображения из массива
@@ -41,13 +32,13 @@ const ProjectCardExtra: React.FC = () => {
         <div className={style.contentLeft}>
           <img
             src={images[imageCount]}
-            alt="gazprom"
+            alt="Выполненный проект"
             onClick={() => {
               changeCount();
             }}
           />
-          <img src={images[2]} alt="gazprom" />
-          <img src={images[1]} alt="gazprom" />
+          <img src={images[2]} alt="Выполненный проект" />
+          <img src={images[1]} alt="Выполненный проект" />
         </div>
         <div className={style.contentRight}>
           <div className={style.sliderBtns}>
@@ -62,19 +53,8 @@ const ProjectCardExtra: React.FC = () => {
             })}
           </div>
           <div className={style.descr}>
-            <h3 className={style.title_h3}>ОАО “Газпром”</h3>
-            <p className={style.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              sagittis mauris ac enim sagittis dignissim.
-            </p>
-            <p className={style.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              sagittis mauris ac enim sagittis dignissim.
-            </p>
-            <p className={style.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              sagittis mauris ac enim sagittis dignissim.
-            </p>
+            <h3 className={style.title_h3}>{title}</h3>
+            <div className={style.text}>{description}</div>
           </div>
         </div>
       </div>

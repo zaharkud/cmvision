@@ -119,7 +119,7 @@
 
 .text {
   max-width: 95%;
-  &:not(:last-of-type) {
+  & p:not(:last-of-type) {
     margin-bottom: 25px;
   }
 

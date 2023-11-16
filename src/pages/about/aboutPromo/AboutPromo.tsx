@@ -28,19 +28,19 @@ const AboutPromo: React.FC = () => {
             </div>
             <div className={style.aboutStat}>
               <div className={style.statItem}>
-                <span className={style.num}>98%</span>
+                <span className={style.num}>92%</span>
                 <p className={style.descr}>положительных отзывов</p>
               </div>
               <div className={style.statItem}>
-                <span className={style.num}>20+</span>
+                <span className={style.num}>5+</span>
                 <p className={style.descr}>лет на рынке</p>
               </div>
               <div className={style.statItem}>
-                <span className={style.num}>345</span>
+                <span className={style.num}>125</span>
                 <p className={style.descr}>выполненных заказов</p>
               </div>
               <div className={style.statItem}>
-                <span className={style.num}>242</span>
+                <span className={style.num}>92</span>
                 <p className={style.descr}>клиента</p>
               </div>
             </div>

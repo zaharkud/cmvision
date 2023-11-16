@@ -2,6 +2,8 @@ import ProjectCard from "./projectCard/ProjectCard";
 import ProjectCardBtn from "./projectCardBtn/ProjectCardBtn";
 import style from "./projectsBlock.module.scss";
 
+import { retailCardInfo, officeCardInfo } from "assets/cards/CardsInfo";
+
 const Projects: React.FC = () => {
   return (
     <section className={style.section}>
@@ -13,8 +15,17 @@ const Projects: React.FC = () => {
           </div>
           <div className={style.slider}>
             <div className={style.sliderCards}>
-              <ProjectCard></ProjectCard>
-              <ProjectCard></ProjectCard>
+              <ProjectCard
+                images={retailCardInfo.images}
+                title={retailCardInfo.title}
+                description={retailCardInfo.description}
+              ></ProjectCard>
+
+              <ProjectCard
+                images={officeCardInfo.images}
+                title={officeCardInfo.title}
+                description={officeCardInfo.description}
+              ></ProjectCard>
               <ProjectCardBtn></ProjectCardBtn>
             </div>
             <div className={style.nextBtn}>
