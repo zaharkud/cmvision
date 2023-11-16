@@ -1,4 +1,4 @@
-import style from "./serviceCard.module.scss";
+import style from "./serviceCardMini.module.scss";
 
 interface IServiceCardMini {
   title: string;

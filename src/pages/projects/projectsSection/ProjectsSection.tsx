@@ -17,6 +17,7 @@ const ProjectsSection: React.FC = () => {
           <p className={style.text}>
             Уже выполнили много проектов различной сложности – от установки
             видеонаблюдения в частном доме до работы с крупными организациями.
+            <br />
             Вот некоторые из наших работ:
           </p>
           <div className={style.projectsList}>

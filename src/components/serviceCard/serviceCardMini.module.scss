@@ -1,0 +1,42 @@
+@import "assets/styles/vars.module.scss";
+
+.content {
+  padding: 37px 25px 27px 25px;
+  position: relative;
+
+  background-color: $MAIN_GREY;
+  border: $BORDER_GREY;
+  transition: border 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    border: $BORDER_YELLOW;
+  }
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+}
+
+.top {
+  flex: 0 0 40px;
+  margin-bottom: 60px;
+
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+    img {
+      height: 50px;
+    }
+  }
+}
+
+.title_h4 {
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+.text {
+  margin-top: 25px;
+}
