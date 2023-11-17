@@ -87,9 +87,9 @@
     flex-direction: column;
     justify-content: flex-end;
     background-image: url("../../../assets/icons/socialThin/whatsapp.svg");
-    background-size: 220px;
+    background-size: 300px;
     background-repeat: no-repeat;
-    background-position: top -90px right -60px;
+    background-position: top -150px right -120px;
   }
   & > :nth-child(3) {
     grid-column: 2 / 3;
@@ -114,7 +114,7 @@
     & > :nth-child(2) {
       align-items: end;
       background-size: 350px;
-      background-position: top -100px left -140px;
+      background-position: top -90px left -140px;
     }
     & > :nth-child(3) {
       align-items: flex-end;
@@ -124,6 +124,8 @@
 .socialItem {
   background-color: $MAIN_BLACK;
   padding: 35px;
+  display: block;
+
   & .socialType {
     font-weight: 500;
     font-size: 13px;

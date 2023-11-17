@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "./projectCard/ProjectCard";
 import ProjectCardBtn from "./projectCardBtn/ProjectCardBtn";
 import style from "./projectsBlock.module.scss";
@@ -26,11 +27,12 @@ const Projects: React.FC = () => {
                 title={officeCardInfo.title}
                 description={officeCardInfo.description}
               ></ProjectCard>
+
               <ProjectCardBtn></ProjectCardBtn>
             </div>
-            <div className={style.nextBtn}>
+            <Link className={style.nextBtn} to="/projects">
               <div></div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

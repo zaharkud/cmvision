@@ -18,6 +18,11 @@ function App() {
     document.documentElement.style.overflowY = "auto";
   }, [currentLocation]);
 
+  useEffect(() => {
+    //поднимаем страницу у началу после перехода по ссылке
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="App">
       <div className="wrapper">

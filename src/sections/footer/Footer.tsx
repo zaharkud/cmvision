@@ -21,10 +21,10 @@ const Footer: React.FC = () => {
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.footerTop}>
-            <a className={style.logo} href="#">
+            <Link className={style.logo} to="/">
               <img src={logo} alt="Системы Безопасности" />
               <p>Системы безопасности</p>
-            </a>
+            </Link>
           </div>
           <div className={style.footerCenter}>
             <div className={style.column_1}>
@@ -33,13 +33,17 @@ const Footer: React.FC = () => {
                 безопасности и контроля на Кавказких Минеральных Водах
               </p>
               <div className={style.social}>
-                <a href="#">
+                <a href="tel:+79197450867">
                   <img src={telephoneIcon} />
                 </a>
-                <a href="#">
+                <a href="https://api.whatsapp.com/send?phone=79197450867">
                   <img src={whatsappIcon} />
                 </a>
-                <a href="#">
+                <a
+                  href="https://t.me/kmvision"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={telegramIcon} />
                 </a>
               </div>

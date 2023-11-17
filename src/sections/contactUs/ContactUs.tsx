@@ -14,15 +14,23 @@ const ContactUs: React.FC = () => {
               Есть вопросы или нужно рассчитать заказ?
             </p>
             <div className={style.contactsBtns}>
-              <a className={style.btn} href="#">
+              <a className={style.btn} href="tel:+79197450867">
                 <img src={telephoneIcon} />
                 <span>Позвонить</span>
               </a>
-              <a className={style.btn} href="#">
+              <a
+                className={style.btn}
+                href="https://api.whatsapp.com/send?phone=79197450867"
+              >
                 <img src={whatsappIcon} />
                 <span>WhatsApp</span>
               </a>
-              <a className={style.btn} href="#">
+              <a
+                className={style.btn}
+                href="https://t.me/kmvision"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={telegramIcon} />
                 <span>Telegram</span>
               </a>

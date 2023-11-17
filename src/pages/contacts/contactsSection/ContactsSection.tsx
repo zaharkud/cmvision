@@ -16,18 +16,28 @@ const ContactsSection: React.FC = () => {
               </form>
             </div>
             <div className={style.contactsSocial}>
-              <div className={style.socialItem}>
+              <a
+                className={style.socialItem}
+                href="https://t.me/kmvision"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <p className={style.socialType}>Telegram</p>
                 <p className={style.socialId}>@KMVision</p>
-              </div>
-              <div className={style.socialItem}>
+              </a>
+
+              <a
+                className={style.socialItem}
+                href="https://api.whatsapp.com/send?phone=79197450867"
+              >
                 <p className={style.socialType}>WhatsApp</p>
                 <p className={style.socialId}>+7 (980) 709-44-91</p>
-              </div>
-              <div className={style.socialItem}>
+              </a>
+
+              <a className={style.socialItem} href="tel:+79197450867">
                 <p className={style.socialType}>Телефон</p>
                 <p className={style.socialId}>+7 (980) 709-44-91</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
